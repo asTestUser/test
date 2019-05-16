@@ -15,10 +15,11 @@ public class ControllerTest{
    @Test
    public void testEquals() {
 
+   System.setProperty("webdriver.chrome.driver","C:\\JenkinsSupport\\chromedriver.exe");
 	//Set Chrome Headless mode as TRUE
 	ChromeOptions options = new ChromeOptions();
 	options.setHeadless(true);
-		
+
 	//Instantiate Web Driver
 	WebDriver driver = new ChromeDriver(options);
 	driver.get("http://localhost:8081/testProj2");
@@ -27,6 +28,6 @@ public class ControllerTest{
   	//searchBox.sendKeys("ChromeDriver");
   	//searchBox.submit();
  	assertEquals("", driver.getTitle());
- 	driver.quit();  
+ 	driver.quit();
    }
 }

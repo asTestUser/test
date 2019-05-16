@@ -4,6 +4,11 @@ xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 id="WebApp_ID" version="3.0">
+  <session-config>
+    <cookie-config>
+      <http-only>true</http-only>
+    </cookie-config>
+  </session-config>
   <servlet>
     <servlet-name>Controller</servlet-name>
     <servlet-class>main.Controller</servlet-class>

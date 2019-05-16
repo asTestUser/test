@@ -7,12 +7,10 @@
       <div>
         <c:choose>
           <c:when test="${not empty returnVal}">
-            <ul>
-              <c:forEach var="returnVal_i" items="${returnVal}">
-                <li>${returnVal_i}</li>
-                <li><e:forHtml value="${returnVal_i}" /></li>
-              </c:forEach>
-            </ul>
+            <c:forEach var="returnVal_i" items="${returnVal}">
+              <c:out value="${returnVal_i}" escapeXml="false"/>
+              <div><e:forHtml value="${forEncode}" /></div>
+            </c:forEach>
           </c:when>
           <c:otherwise>You did not select Yes to get a web response</c:otherwise>
         </c:choose>
