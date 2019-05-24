@@ -27,7 +27,7 @@ public class ControllerTest{
   	//WebElement searchBox = driver.findElement(By.name("q"));
   	//searchBox.sendKeys("ChromeDriver");
   	//searchBox.submit();
- 	assertEquals("", driver.getTitle());
+ 	assertEquals("Sign in [Jenkins]", driver.getTitle());
  	driver.quit();
    }
 }
