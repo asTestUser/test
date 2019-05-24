@@ -15,7 +15,7 @@ public class ControllerTest{
    @Test
    public void testEquals() {
 
-   System.setProperty("webdriver.chrome.driver","C:\\JenkinsSupport\\chromedriver.exe");
+   System.setProperty("webdriver.chrome.driver","C:\\jenkins\\support\\chromedriver.exe");
 	//Set Chrome Headless mode as TRUE
 	ChromeOptions options = new ChromeOptions();
 	options.setHeadless(true);
@@ -27,7 +27,7 @@ public class ControllerTest{
   	//WebElement searchBox = driver.findElement(By.name("q"));
   	//searchBox.sendKeys("ChromeDriver");
   	//searchBox.submit();
- 	assertEquals("", driver.getTitle());
+ 	assertEquals("Sign in [Jenkins]", driver.getTitle());
  	driver.quit();
    }
 }
