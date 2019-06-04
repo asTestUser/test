@@ -7,7 +7,7 @@ public class Model{
   public List<String> getContent(String inputVal){
     List<String> returnVal = new ArrayList<String>();
     if(inputVal.toLowerCase().matches("yes|y")){
-      returnVal.add(Sanitizers.FORMATTING.sanitize("<p>sanitized response10</p>"));
+      returnVal.add(Sanitizers.FORMATTING.sanitize("<p>sanitized response12</p>"));
     }
     return returnVal;
   }
