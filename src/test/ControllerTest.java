@@ -22,7 +22,7 @@ public class ControllerTest{
 
 	//Instantiate Web Driver
 	WebDriver driver = new ChromeDriver(options);
-	driver.get("http://localhost:8081/testProj2");
+	driver.get("http://localhost:8081/atom");
 
   	//WebElement searchBox = driver.findElement(By.name("q"));
   	//searchBox.sendKeys("ChromeDriver");
